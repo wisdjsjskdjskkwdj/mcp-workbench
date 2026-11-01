@@ -7,7 +7,6 @@
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18.0.0-green.svg)](https://nodejs.org/)
 [![Status](https://img.shields.io/badge/Status-Stable%20Verified-blue.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-orange.svg)]()
-[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)]()
 
 ---
 
@@ -145,7 +144,4 @@ mcp-workbench/
 
 ---
 
-## 📄 授权与许可
-
-本项目采用 [MIT License](LICENSE) 开源许可证。
 欢迎提交 Issue 与 Pull Request 共同打造更好用的 MCP 本地中枢与微智能体开发环境！
