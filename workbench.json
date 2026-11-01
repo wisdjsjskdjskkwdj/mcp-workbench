@@ -1,0 +1,43 @@
+{
+  "version": "0.3.0",
+  "activeProfile": "default",
+  "profiles": {
+    "default": {
+      "exposeMode": "high_frequency",
+      "enabledServers": [
+        "*"
+      ],
+      "disabledTools": []
+    }
+  },
+  "servers": {
+    "math_ops": {
+      "id": "math_ops",
+      "command": "node",
+      "args": [
+        "./dist/test_servers/mock_server_a.js"
+      ],
+      "env": {},
+      "enabled": true,
+      "autoRestart": true,
+      "highFrequencyTools": [
+        "add",
+        "multiply"
+      ]
+    },
+    "sys_clock": {
+      "id": "sys_clock",
+      "command": "node",
+      "args": [
+        "./dist/test_servers/mock_server_b.js"
+      ],
+      "env": {},
+      "enabled": true,
+      "autoRestart": true,
+      "highFrequencyTools": [
+        "get_time"
+      ]
+    }
+  },
+  "webUiEnabled": true
+}

@@ -1,0 +1,29 @@
+# Runtime directory (extracted portable node)
+runtime/
+
+# Locks and runtime state
+.workbench-daemon.lock.json
+.workbench-master.key
+.workbench-vault.key
+.workbench-vault.json
+.workbench-clients.json
+.workbench-profiles.json
+.workbench-policies.json
+.workbench-audit-history.json
+.workbench-custom-adapters.json
+*.log
+*.lock
+*.bak
+*.tmp.*
+
+# Local deployment and helper scripts
+push-to-github.bat
+*.push.*
+
+# OS specific files
+Thumbs.db
+.DS_Store
+
+# IDE and dependencies
+.vscode/
+node_modules/

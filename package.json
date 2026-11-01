@@ -1,0 +1,29 @@
+{
+  "name": "mcp-workbench-prototype",
+  "version": "0.3.0",
+  "description": "Local-first Single-Entrypoint MCP Gateway, Lightweight Process Pool, and Agent Self-Bootstrapping Prototype",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "mcp-workbenchd": "./dist/daemon.js",
+    "mcp-workbench-shim": "./dist/stdio_shim.js",
+    "mcp-workbench-tui": "./dist/tui_console.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "daemon": "node ./dist/daemon.js",
+    "shim": "node ./dist/stdio_shim.js",
+    "verify": "node ./dist/verify_acceptance.js",
+    "tui": "node ./dist/tui_console.js",
+    "agent": "node ./micro_agent/run_agent.mjs",
+    "agent:test": "node ./micro_agent/test_agent.mjs",
+    "cli": "node ./micro_agent/cli_frontend.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.9.3"
+  }
+}
